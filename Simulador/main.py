@@ -1,8 +1,13 @@
 import time
+import threading
 from planificador import Planificador
 from memoria import Memoria
 
+pausado = False
+
 def menu_administrativo(planificador, memoria):
+    global pausado
+    pausado = True
     while True:
         print("\n=========== MENÚ ADMINISTRATIVO ===========")
         planificador.mostrar_estado(memoria)
@@ -27,9 +32,17 @@ def menu_administrativo(planificador, memoria):
                 print("PID inválido.")
         elif opcion == '3':
             print("Reanudando simulación...\n")
+            pausado = False
             break
         else:
             print("Opción no válida. Intenta de nuevo.")
+
+def escuchar_teclado():
+    global pausado
+    while True:
+        entrada = input()
+        if entrada.lower() in ['m', 'menu', 'admin']:
+            pausado = True
 
 if __name__ == "__main__":
     planificador = Planificador(quantum=3)
@@ -38,18 +51,17 @@ if __name__ == "__main__":
     for _ in range(5):
         planificador.crear_proceso()
 
-    ciclo_actual = 0
-    ciclos_para_menu = 20  # Cada 20 ciclos se pausa y muestra el menú
+    # Hilo para escuchar la entrada del usuario
+    hilo_entrada = threading.Thread(target=escuchar_teclado, daemon=True)
+    hilo_entrada.start()
 
     try:
         while True:
-            planificador.siguiente_evento(memoria)
-            planificador.mostrar_estado(memoria)
-            time.sleep(1)
-            ciclo_actual += 1
-
-            if ciclo_actual >= ciclos_para_menu:
-                ciclo_actual = 0
+            if not pausado:
+                planificador.siguiente_evento(memoria)
+                planificador.mostrar_estado(memoria)
+                time.sleep(1)
+            else:
                 menu_administrativo(planificador, memoria)
 
     except KeyboardInterrupt:
