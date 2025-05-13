@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc22a0a-e410-43cd-b3c7-89606d781bc4" name="Changes" comment="ProyectoIntegrador" />
+    <list default="true" id="ddc22a0a-e410-43cd-b3c7-89606d781bc4" name="Changes" comment="ProyectoIntegrador con menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747079027207</updated>
       <workItem from="1747079028285" duration="3970000" />
-      <workItem from="1747088217797" duration="5772000" />
+      <workItem from="1747088217797" duration="6087000" />
     </task>
     <task id="LOCAL-00001" summary="ProyectoIntegrador">
       <option name="closed" value="true" />
@@ -161,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747107537490</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ProyectoIntegrador con menu">
+      <option name="closed" value="true" />
+      <created>1747107837528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747107837528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ProyectoIntegrador" />
-    <option name="LAST_COMMIT_MESSAGE" value="ProyectoIntegrador" />
+    <MESSAGE value="ProyectoIntegrador con menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProyectoIntegrador con menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -194,7 +203,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Simulador_SO$planificador.coverage" NAME="planificador Coverage Results" MODIFIED="1747091916027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulador" />
-    <SUITE FILE_PATH="coverage/Simulador_SO$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1747094830273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulador" />
+    <SUITE FILE_PATH="coverage/Simulador_SO$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1747107750250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulador" />
     <SUITE FILE_PATH="coverage/Simulador_SO$main.coverage" NAME="main Coverage Results" MODIFIED="1747081096768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
